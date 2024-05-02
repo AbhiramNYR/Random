@@ -1,3 +1,4 @@
+
 ex.1
 install git
 
@@ -13,8 +14,27 @@ git add .
 git push orgin main
 git commit -m
 
-ex.4
-git init
+change default branch
+git config --global init.defaultBranch main
+
+create and merge branch
+git checkout -b <feature-branch>
+git merge <feature-branch>
+
+add remote repository
+git remote add orgin <remote-url>
+
+push
+git push orgin main
+
+issues
+git commit -m "Fix #1:Done"
 git add .
 git push orgin main
-git commit -m
+
+fork
+git clone https://github.com/YOUR-USERNAME/Spoon-Knife
+git remote -v
+git remote add upstream https://github.com/ORIGINAL-OWNER/Spoon-Knife.git
+git remote -v
+
